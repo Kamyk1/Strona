@@ -38,7 +38,7 @@
   <section class="slider-title">
     <h1>Profesjonalne Wyścigi Samochodowe</h1>
     <p>Weź udział w najbardziej emocjonujących wyścigach sezonu!</p>
-    <a href="#formularz" class="button">Zapisz się teraz</a>
+    <a href="#formularzsec" class="button">Zapisz się teraz</a>
   </section>
   <section class="slider">
     <div class="slides">
@@ -47,20 +47,27 @@
       <img src="images/image3.jpg" alt="Wyścig 3" />
     </div>
   </section>
-  <section class="below-section">
-    <div class="form-link">
-      <h2>Zapraszamy na wyścigi!</h2>
+  <section class="below-section" id="formularzsec">
+<div class="form-link">
+  <h2>Dołącz do Profesjonalnych Wyścigów!</h2>
+  <div class="event-info">
+    <div class="event-text">
       <p>
-        Zbliża się najważniejsze wydarzenie sezonu – emocjonujące, profesjonalne wyścigi samochodowe! 
-        Śledź rywalizację na torze i poczuj prawdziwą adrenalinę. Zapisy już trwają!
+        Przeżyj ekscytujące wyścigi samochodowe, gdzie najlepsze drużyny rywalizują o zwycięstwo. Zapisz się teraz, aby wziąć udział w niezapomnianych zawodach, pełnych adrenaliny i emocji!
       </p>
       <p>
-        Aby się zapisać, kliknij w poniższy przycisk i wypełnij formularz rejestracyjny. Liczba miejsc ograniczona!
+        Liczba miejsc jest ograniczona, więc nie czekaj! Wypełnij formularz rejestracyjny i stań się częścią tego wyjątkowego wydarzenia.
       </p>
-      <a href="formularz.html" id="formularz" class="button">Zapisz się teraz</a>
     </div>
-    
-<div class="archive">
+    <div class="event-image">
+      <img src="images/race-car.jpg" alt="Wyścig samochodowy" />
+    </div>
+  </div>
+  <a href="formularz.html" class="button">Zapisz się teraz</a>
+  <p class="counter">Aktualna liczba zapisanych: <span id="counter">0</span></p>
+</div>
+
+<div class="archive" >
   <h3>Poprzednie edycje</h3>
   <div class="archive-item">
     <img src="images/small_image1.jpg" alt="2024" />
@@ -88,5 +95,34 @@
   <footer>
     &copy; 2025 Profesjonalne Wyścigi Samochodowe — Wszelkie prawa zastrzeżone
   </footer>
+<script>
+  let count = localStorage.getItem("zapisani") || 0;
+  const counterElement = document.getElementById("counter");
+  counterElement.textContent = count;
+
+  const formButton = document.getElementById("formularz");
+  formButton.addEventListener("click", function () {
+    count++; 
+    localStorage.setItem("zapisani", count); 
+    counterElement.textContent = count;
+    window.location.href = "formularz.html"; 
+  });
+</script>
+<script>
+const anchors = document.querySelectorAll('a[href^="#"]');
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault(); 
+    const targetId = this.getAttribute('href').substring(1); 
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - window.innerHeight + targetElement.offsetHeight,
+        behavior: 'smooth' 
+      });
+    }
+  });
+});
+</script>
 </body>
 </html>
