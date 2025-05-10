@@ -60,6 +60,55 @@ nav ul li a:hover {
   color: #fff;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  padding: 1em;
+  list-style: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+  min-width: 200px;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.submenu li {
+  margin-bottom: 0.75em;
+}
+
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.submenu li a {
+  color: #FFD700;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  display: block;
+  padding: 0.3em 0;
+  transition: color 0.3s;
+}
+
+.submenu li a:hover {
+  color: #fff;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
