@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profesjonalne Wyścigi Samochodowe</title>
-   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/logo" href="images/logo2.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<header>
-  <div class="logo">
-    <a href="index.html"><img src="images/logo2.png" alt="Logo Wyścigi Pro" /></a>
-  </div>
-  <nav>
-    <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
-    <label for="hamburger-checkbox" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <ul id="nav-list">
-      <li><a href="index.html">Strona Główna</a></li>
-      <li><a href="#">Aktualności</a></li>
-   <li class="dropdown">
-  <a href="#">Mistrzostwa</a>
-  <ul class="submenu">
-    <li><a href="#">Tablica Ogłoszeń</a></li>
-    <li><a href="#">Wyniki</a></li>
-  </ul>
-</li>
-    <li><a href="#">Galeria</a></li>
-      <li><a href="#">Kalendarz</a></li>
-      <li><a href="#">Media</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo2.png" alt="Logo Wyścigi Pro" /></a>
+    </div>
+    <nav>
+      <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
+      <label for="hamburger-checkbox" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul id="nav-list">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="#">Aktualności</a></li>
+        <li class="dropdown">
+          <a href="#">Mistrzostwa</a>
+          <ul class="submenu">
+            <li><a href="#">Tablica Ogłoszeń</a></li>
+            <li><a href="#">Wyniki</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Kalendarz</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="slider-title">
     <h1>Profesjonalne Wyścigi Samochodowe</h1>
     <p>Weź udział w najbardziej emocjonujących wyścigach sezonu!</p>
-    <a href="#formularzsec" class="button">Zapisz się teraz</a>
+    <a href="#formularzsec2" class="button">Zapisz się teraz</a>
   </section>
   <section class="slider">
     <div class="slides">
@@ -48,81 +51,83 @@
     </div>
   </section>
   <section class="below-section" id="formularzsec">
-<div class="form-link">
-  <h2>Dołącz do Profesjonalnych Wyścigów!</h2>
-  <div class="event-info">
-    <div class="event-text">
-      <p>
-        Przeżyj ekscytujące wyścigi samochodowe, gdzie najlepsze drużyny rywalizują o zwycięstwo. Zapisz się teraz, aby wziąć udział w niezapomnianych zawodach, pełnych adrenaliny i emocji!
-      </p>
-      <p>
-        Liczba miejsc jest ograniczona, więc nie czekaj! Wypełnij formularz rejestracyjny i stań się częścią tego wyjątkowego wydarzenia.
-      </p>
+    <div class="form-link">
+      <h2>Dołącz do Profesjonalnych Wyścigów!</h2>
+      <div class="event-info" id="formularzsec2">
+        <div class="event-text">
+          <p>
+            Przeżyj ekscytujące wyścigi samochodowe, gdzie najlepsze drużyny rywalizują o zwycięstwo. Zapisz się teraz,
+            aby wziąć udział w niezapomnianych zawodach, pełnych adrenaliny i emocji!
+          </p>
+          <p>
+            Liczba miejsc jest ograniczona, więc nie czekaj! Wypełnij formularz rejestracyjny i stań się częścią tego
+            wyjątkowego wydarzenia.
+          </p>
+        </div>
+        <div class="event-image">
+          <img src="images/race-car.jpg" alt="Wyścig samochodowy" />
+        </div>
+      </div>
+      <a href="formularz.html" class="button" id="Formularzcount">Zapisz się teraz</a>
+      <p class="counter">Aktualna liczba uczestników: <span id="counter">0</span></p>
     </div>
-    <div class="event-image">
-      <img src="images/race-car.jpg" alt="Wyścig samochodowy" />
+    <div class="archive">
+      <h3>Poprzednie edycje</h3>
+      <div class="archive-item">
+        <img src="images/small_image1.jpg" alt="2024" />
+        <div>
+          <h2>Tor Poznań <strong>2024:</strong></h2>
+          <p>Rekord frekwencji!</p>
+        </div>
+      </div>
+      <div class="archive-item">
+        <img src="images/small_image2.jpg" alt="2023" />
+        <div>
+          <h2>Gdańsk <strong>2023:</strong></h2>
+          <p>Emocje i deszcz w Gdańsku.</p>
+        </div>
+      </div>
+      <div class="archive-item">
+        <img src="images/small_image3.jpg" alt="2022" />
+        <div>
+          <h2>Katowice <strong>2022:</strong></h2>
+          <p>Nocne zmagania w Katowicach.</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <a href="formularz.html" class="button">Zapisz się teraz</a>
-  <p class="counter">Aktualna liczba zapisanych: <span id="counter">0</span></p>
-</div>
-
-<div class="archive" >
-  <h3>Poprzednie edycje</h3>
-  <div class="archive-item">
-    <img src="images/small_image1.jpg" alt="2024" />
-    <div>
-      <h2>Tor Poznań <strong>2024:</strong></h2>
-      <p>Rekord frekwencji!</p>
-    </div>
-  </div>
-  <div class="archive-item">
-    <img src="images/small_image2.jpg" alt="2023" />
-    <div>
-      <h2>Gdańsk <strong>2023:</strong></h2>
-      <p>Emocje i deszcz w Gdańsku.</p>
-    </div>
-  </div>
-  <div class="archive-item">
-    <img src="images/small_image3.jpg" alt="2022" />
-    <div>
-      <h2>Katowice <strong>2022:</strong></h2>
-      <p>Nocne zmagania w Katowicach.</p>
-    </div>
-  </div>
-</div>
   </section>
   <footer>
     &copy; 2025 Profesjonalne Wyścigi Samochodowe — Wszelkie prawa zastrzeżone
   </footer>
-<script>
-  let count = localStorage.getItem("zapisani") || 0;
-  const counterElement = document.getElementById("counter");
-  counterElement.textContent = count;
-
-  const formButton = document.getElementById("formularz");
-  formButton.addEventListener("click", function () {
-    count++; 
-    localStorage.setItem("zapisani", count); 
+  <script>
+    let count = localStorage.getItem("zapisani") || 5689;
+    const counterElement = document.getElementById("counter");
     counterElement.textContent = count;
-    window.location.href = "formularz.html"; 
-  });
-</script>
-<script>
-const anchors = document.querySelectorAll('a[href^="#"]');
-anchors.forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault(); 
-    const targetId = this.getAttribute('href').substring(1); 
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - window.innerHeight + targetElement.offsetHeight,
-        behavior: 'smooth' 
+
+    const formButton = document.getElementById("Formularzcount");
+    formButton.addEventListener("click", function () {
+      count++;
+      localStorage.setItem("zapisani", count);
+      counterElement.textContent = count;
+      window.location.href = "formularz.html";
+    });
+  </script>
+  <script>
+    const anchors = document.querySelectorAll('a[href^="#"]');
+    anchors.forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
-    }
-  });
-});
-</script>
+    });
+  </script>
 </body>
+
 </html>

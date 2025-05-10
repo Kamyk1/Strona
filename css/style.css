@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
@@ -109,34 +108,6 @@ nav ul li a:hover {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .dropdown .submenu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    background-color: transparent;
-    padding: 0.5em 0 0.5em 1em;
-    border-radius: 0;
-    transition: none;
-  }
-
-  .dropdown .submenu li a {
-    padding: 0.5em 0;
-    color: #FFD700;
-  }
-
-  .dropdown .submenu li a:hover {
-    color: #fff;
-  }
-
-  .dropdown:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-  }
-}
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -155,40 +126,9 @@ nav ul li a:hover {
   display: none;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    display: none; 
-    width: 100%;
-    flex-direction: column;
-    gap: 1em;
-    background-color: #000;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 1em 2em;
-    z-index: 100;
-  }
-
-  nav ul li a {
-    color: #FFD700;
-  }
-
-  nav ul li a:hover {
-    color: #fff;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .hamburger-checkbox:checked + .hamburger + #nav-list {
-    display: flex;
-  }
-}
-
 .slider {
   position: relative;
-  height: calc(100vh - 132px); 
+  height: calc(100vh - 132px);
   overflow: hidden;
 }
 
@@ -206,10 +146,21 @@ nav ul li a:hover {
 }
 
 @keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100vw); }
-  66% { transform: translateX(-200vw); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-100vw);
+  }
+
+  66% {
+    transform: translateX(-200vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .below-section {
@@ -227,7 +178,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
   padding: 3em;
   border-radius: 15px;
   width: 100%;
@@ -281,7 +232,7 @@ nav ul li a:hover {
 }
 
 .event-image img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .button {
@@ -300,7 +251,7 @@ nav ul li a:hover {
 
 .button:hover {
   background-color: #e6c200;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .counter {
@@ -312,38 +263,12 @@ nav ul li a:hover {
 }
 
 .counter span {
-  color: #FFD700; 
-}
-
-@media (max-width: 768px) {
-  .form-link {
-    padding: 2em;
-  }
-
-  .event-info {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .event-text {
-    text-align: center;
-    font-size: 1.1em;
-  }
-
-  .event-image img {
-    width: 80%;
-    max-width: 350px;
-  }
-
-  .button {
-    width: 100%;
-    padding: 1.2em;
-  }
+  color: #4CAF50;
 }
 
 .archive {
   flex: 1 1 300px;
-  padding: 1.5em; 
+  padding: 1.5em;
   border-left: 2px solid #ccc;
   max-width: 100%;
   margin: 0 auto;
@@ -360,42 +285,42 @@ nav ul li a:hover {
 .archive-item {
   display: flex;
   align-items: center;
-  gap: 1.5em; 
+  gap: 1.5em;
   margin-bottom: 1.5em;
   background-color: #fffde6;
   padding: 1em;
   border-left: 4px solid #FFD700;
-  border-radius: 12px; 
+  border-radius: 12px;
   transition: background-color 0.3s, transform 0.3s ease-in-out;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .archive-item:hover {
   background-color: #FFD700;
   transform: scale(1.05);
-  color: #fff; 
+  color: #fff;
 }
 
 .archive-item:hover strong {
- transition: color 0.3s;
-  color: #fff; 
+  transition: color 0.3s;
+  color: #fff;
 }
 
 .archive-item img {
-  width: 120px; 
-  height: 80px; 
+  width: 120px;
+  height: 80px;
   object-fit: cover;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .archive-item div {
-  font-size: 1.1em; 
+  font-size: 1.1em;
   color: #333;
 }
 
 .archive-item h2 {
-  font-size: 1.3em; 
+  font-size: 1.3em;
   color: #000;
   transition: color 0.3s ease-in-out;
 }
@@ -410,7 +335,7 @@ nav ul li a:hover {
   color: #FFD700;
 }
 
-.archive-item:hover h2, 
+.archive-item:hover h2,
 .archive-item:hover p {
   color: white;
 }
@@ -420,28 +345,7 @@ footer {
   color: #FFD700;
   text-align: center;
   padding: 2em;
-  font-size: 1em; 
-}
-
-@media (max-width: 768px) {
-  .archive-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em; 
-  }
-
-  .archive-item img {
-    width: 100px;
-    height: 70px;
-  }
-
-  .archive-item div {
-    font-size: 1em; 
-  }
-
-  .archive-item h2 {
-    font-size: 1.2em; 
-  }
+  font-size: 1em;
 }
 
 .slider-title {
@@ -475,7 +379,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
 }
 
 #formularzsec h2 {
@@ -543,7 +447,8 @@ form {
   gap: 1.2em;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.8em;
   font-size: 1em;
   border: 1px solid #ccc;
@@ -551,14 +456,113 @@ input, textarea {
   font-family: inherit;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #FFD700;
   box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
   outline: none;
 }
 
 @media (max-width: 768px) {
+  .dropdown .submenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background-color: transparent;
+    padding: 0.5em 0 0.5em 1em;
+    border-radius: 0;
+    transition: none;
+  }
+
+  .dropdown .submenu li a {
+    padding: 0.5em 0;
+    color: #FFD700;
+  }
+
+  .dropdown .submenu li a:hover {
+    color: #fff;
+  }
+
+  .dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1em 2em;
+    z-index: 100;
+  }
+
+  nav ul li a {
+    color: #FFD700;
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger-checkbox:checked+.hamburger+#nav-list {
+    display: flex;
+  }
+
+  .form-link {
+    padding: 2em;
+  }
+
+  .event-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-text {
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  .event-image img {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 1.2em;
+  }
+
   .form-main {
     flex-direction: column;
+  }
+
+  .archive-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .archive-item img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .archive-item div {
+    font-size: 1em;
+  }
+
+  .archive-item h2 {
+    font-size: 1.2em;
   }
 }

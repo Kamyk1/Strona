@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profesjonalne Wyścigi Samochodowe</title>
-   <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-<header>
-  <div class="logo">
-    <a href="index.html"><img src="images/logo2.png" alt="Logo Wyścigi Pro" /></a>
-  </div>
-  <nav>
-    <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
-    <label for="hamburger-checkbox" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <ul id="nav-list">
-      <li><a href="index.html">Strona Główna</a></li>
-      <li><a href="#">Aktualności</a></li>
-   <li class="dropdown">
-  <a href="#">Mistrzostwa</a>
-  <ul class="submenu">
-    <li><a href="#">Tablica Ogłoszeń</a></li>
-    <li><a href="#">Wyniki</a></li>
-  </ul>
-</li>
-    <li><a href="#">Galeria</a></li>
-      <li><a href="#">Kalendarz</a></li>
-      <li><a href="#">Media</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo2.png" alt="Logo Wyścigi Pro" /></a>
+    </div>
+    <nav>
+      <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
+      <label for="hamburger-checkbox" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul id="nav-list">
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="#">Aktualności</a></li>
+        <li class="dropdown">
+          <a href="#">Mistrzostwa</a>
+          <ul class="submenu">
+            <li><a href="#">Tablica Ogłoszeń</a></li>
+            <li><a href="#">Wyniki</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Kalendarz</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
   <main class="form-main">
-  <section class="contact-info">
+    <section class="contact-info">
       <h2>Informacje kontaktowe</h2>
       <p><strong>Adres:</strong> ul. Wykień 95, 26-085 Ćmińsk</p>
       <p><strong>Miejsce spotkania:</strong> Tor wyścigowy</p>
       <p><strong>Godzina:</strong> 14:00</p>
-    <iframe 
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.304476238972!2d21.0122283!3d52.2296756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6696a58b13%3A0xb94e61f82435334!2sĆmińsk!5e0!3m2!1spl!2spl!4v1680000000000!5m2!1spl!2spl" 
-      frameborder="0" 
-      style="width:100%; height:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-  </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.304476238972!2d21.0122283!3d52.2296756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc6696a58b13%3A0xb94e61f82435334!2sĆmińsk!5e0!3m2!1spl!2spl!4v1680000000000!5m2!1spl!2spl"
+        frameborder="0" style="width:100%; height:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+        allowfullscreen loading="lazy">
+      </iframe>
+    </section>
 
-  <div class="separator"></div>
+    <div class="separator"></div>
 
-  <section class="form-box">
-    <h2>Skontaktuj się z nami</h2>
-    <form>
-      <label for="name">Imię i nazwisko:</label>
-      <input type="text" id="name" name="name" required>
+    <section class="form-box">
+      <h2>Skontaktuj się z nami</h2>
+      <form>
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
 
-      <label for="message">Wiadomość:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit" class="button">Wyślij</button>
-    </form>
-  </section>
-</main>
+        <button type="submit" class="button">Wyślij</button>
+      </form>
+    </section>
+  </main>
   <footer>
     &copy; 2025 Profesjonalne Wyścigi Samochodowe — Wszelkie prawa zastrzeżone
   </footer>
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".form-box form");
-    const formContainer = document.querySelector(".form-box");
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".form-box form");
+      const formContainer = document.querySelector(".form-box");
+      const separator = document.querySelector(".separator");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      formContainer.innerHTML = `
-<h2>🎉 Zapis przyjęty!</h2>
-<p>Dziękujemy za kontakt! Twój formularz został pomyślnie wysłany.</p>
-<p>Jesteś już na liście — czekaj na dalsze informacje od naszego zespołu.</p>
-<p>📍 Do zobaczenia na wydarzeniu!</p>
-      `;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        formContainer.innerHTML = `
+            <h2>🎉 Zapis przyjęty!</h2>
+            <p>Dziękujemy za kontakt! Twój formularz został pomyślnie wysłany.</p>
+            <p>Jesteś już na liście — czekaj na dalsze informacje od naszego zespołu.</p>
+            <p>📍 Do zobaczenia na wydarzeniu!</p>
+        `;
+        formContainer.classList.add('form-submitted');
+        separator.style.display = 'none';
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
+
 </html>
